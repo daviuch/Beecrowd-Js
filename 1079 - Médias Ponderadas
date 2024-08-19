@@ -1,0 +1,26 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var x = parseInt(prompt())
+ 
+ for(var c = 1;c<=x;c=c+1){
+ var entrada = prompt("XXXXX");
+
+var [A,B,C] = entrada.split(" ");
+
+A = parseFloat(A);
+
+B = parseFloat(B);
+
+C = parseFloat(C);
+
+var A2= A*2
+var B2= B*3
+var C2= C*5
+var med = (A2+B2+C2)/10
+console.log(med.toFixed(1))
+
+}
+
+
