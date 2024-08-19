@@ -1,0 +1,71 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var valor = parseFloat(prompt("a"))
+valor = valor.toFixed(3)
+
+
+var cem = valor/100
+var restocem = valor%100
+
+var cinquenta= restocem/50
+var restocinquenta= restocem%50
+
+var vinte = restocinquenta/20
+var restovinte = restocinquenta%20
+
+var dez = restovinte/10
+var restodez= restovinte%10
+
+var cinco = restodez/5
+var restocinco = restodez%5
+
+var dois=restocinco/2
+var um = restocinco%2
+
+
+var decimais= valor - (Math.trunc(valor))
+
+
+
+var meio= decimais/0.5
+var restomeio = decimais%0.5
+
+var quart = restomeio/0.25
+var restoquart= restomeio%0.25
+
+var dec = restoquart/0.10
+var restodec= restoquart%0.10
+
+var cin = restodec/0.05
+
+
+var restocin = restodec%0.05
+var un = restocin/(0.01)
+
+
+
+
+
+
+
+
+console.log("NOTAS:")
+console.log( Math.trunc(cem)+" nota(s) de R$ 100.00")
+console.log(Math.trunc(cinquenta) +" nota(s) de R$ 50.00")
+console.log(Math.trunc(vinte)+" nota(s) de R$ 20.00")
+console.log(Math.trunc(dez)+ " nota(s) de R$ 10.00")
+console.log(Math.trunc(cinco)+" nota(s) de R$ 5.00")
+console.log(Math.trunc(dois)+" nota(s) de R$ 2.00")
+
+
+
+
+console.log("MOEDAS:")
+console.log(Math.trunc(um)+" moeda(s) de R$ 1.00")
+console.log(Math.trunc(meio)+" moeda(s) de R$ 0.50")
+console.log(Math.trunc(quart)+" moeda(s) de R$ 0.25")
+console.log(Math.trunc(dec)+" moeda(s) de R$ 0.10")
+console.log(Math.trunc(cin)+" moeda(s) de R$ 0.05")
+console.log(Math.round(un)+" moeda(s) de R$ 0.01")
