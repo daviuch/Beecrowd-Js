@@ -1,0 +1,96 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+
+var perg= prompt("")
+
+
+
+if(perg=="vertebrado"){
+var perg2= prompt("")
+	
+	if(perg2=="ave"){
+	var perg3= prompt("")
+
+		if(perg3=="carnivoro"){
+		console.log("aguia")
+		}
+		
+		
+		else if(perg3=="onivoro"){
+		console.log("pomba")}
+		
+		
+	
+	}
+	
+	
+	
+	else if(perg2=="mamifero") {
+	
+	var perg32= prompt("")
+		
+		
+		if(perg32=="onivoro"){
+		console.log("homem")}
+		
+		else if(perg32=="herbivoro"){
+		console.log("vaca")
+		}
+		
+	}
+	
+	
+}	
+
+
+
+else if(perg="invertebrado"){
+	
+	
+	
+	var perg2= prompt("")
+	
+	if(perg2=="inseto"){
+	var perg3= prompt("")
+
+		if(perg3=="hematofago"){
+		console.log("pulga")
+		}
+		
+		
+		else if(perg3=="herbivoro"){
+		console.log("lagarta")}
+		
+		
+	
+	}
+	
+	
+	
+	else if(perg2=="anelideo") {
+	
+	var perg32= prompt("")
+		
+		
+		if(perg32=="hematofago"){
+		console.log("sanguessuga")}
+		
+		else if(perg32=="onivoro"){
+		console.log("minhoca")
+		}
+		
+	}
+
+				
+	
+
+	
+
+
+
+
+}
+
