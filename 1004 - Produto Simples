@@ -1,0 +1,10 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto){return lines.shift();};
+
+var a = parseInt(prompt("variavel a"))
+var b = parseInt(prompt("variavel b"))
+var PROD= parseInt(a*b)
+
+console.log("PROD = " + PROD)
+
