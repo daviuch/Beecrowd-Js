@@ -1,0 +1,55 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var x = parseInt(prompt(""))
+
+
+
+  if (x == 1) {
+    console.log("January")
+  }
+
+  if (x == 2) {
+    console.log("February")
+  }
+
+  if (x == 3) {
+    console.log("March")
+  }
+
+  if (x == 4) {
+    console.log("April")
+  }
+
+  if (x == 5) {
+    console.log("May")
+  }
+
+  if (x == 6) {
+    console.log("June")
+  }
+
+  if (x == 7) {
+    console.log("July")
+  }
+
+  if (x == 8) {
+    console.log("August")
+  }
+
+  if (x == 9) {
+    console.log("September")
+  }
+
+  if (x == 10) {
+    console.log("October")
+  }
+
+  if (x == 11) {
+    console.log("November")
+  }
+
+  if (x == 12) {
+    console.log("December")
+  }
