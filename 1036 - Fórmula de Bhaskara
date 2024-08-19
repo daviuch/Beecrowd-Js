@@ -1,0 +1,31 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+var entrada = prompt("XXXXX");
+
+var [A,B,C] = entrada.split(" ");
+
+A = parseFloat(A);
+
+B = parseFloat(B);
+
+C = parseFloat(C);
+
+
+var delta = (B**2)-4*A*C
+var raiz= Math.sqrt(delta)
+
+
+var pos= (-B+raiz)/(2*A)  
+var NEG = (-B-raiz)/(2*A)
+
+
+if(A===0 || delta<0){
+    console.log("Impossivel calcular")
+}
+else{
+    console.log("R1 = "+pos.toFixed(5))
+    console.log("R2 = "+NEG.toFixed(5))
+    
+  
+}
