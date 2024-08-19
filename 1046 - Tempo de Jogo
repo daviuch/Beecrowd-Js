@@ -1,0 +1,20 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var entrada = prompt("XXXXX");
+
+  var [A, B, C, D] = entrada.split(" ");
+
+  A = parseInt(A);
+
+  B = parseInt(B);
+
+  var tempo = Math.abs(A - 24) + B
+  var dif = B - A
+
+  if (A >= B) {
+    console.log("O JOGO DUROU " + tempo + " HORA(S)")
+  }
+
+  else { console.log("O JOGO DUROU " + dif + " HORA(S)") }
