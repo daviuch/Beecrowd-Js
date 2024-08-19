@@ -1,0 +1,32 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var entrada = prompt("XXXXX");
+
+  var [A, B, C, D] = entrada.split(" ");
+
+  A = parseFloat(A);
+
+  B = parseFloat(B);
+
+  C = parseFloat(C);
+
+
+  var perimetro = A + B + C
+  var area = (C * (A + B)) / 2
+
+
+  var maior = Math.max(A, B, C)
+  var menor = Math.min(A, B, C)
+  var meio = A + B + C - maior - menor
+
+
+  if (maior >= menor + meio) {
+    console.log("Area = " + area.toFixed(1))
+  }
+  else {
+    console.log("Perimetro = " + perimetro.toFixed(1))
+  }
+
