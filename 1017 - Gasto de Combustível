@@ -1,0 +1,11 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var t = parseInt(prompt("Tempo"))
+var v = parseInt(prompt("Velocidade"))
+
+var g = v*t
+var l = g /12
+
+console.log(l.toFixed(3))
