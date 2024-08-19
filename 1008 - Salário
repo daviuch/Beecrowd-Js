@@ -1,0 +1,11 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var N = parseInt(prompt("Número"))
+var H = parseFloat(prompt("Tempo"))
+var V = parseFloat(prompt("Valor"))
+var S = H*V
+
+console.log("NUMBER = "+N)
+console.log("SALARY = U$ "+ S.toFixed(2))
