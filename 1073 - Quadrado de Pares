@@ -1,0 +1,16 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var X= parseInt(prompt(""))
+var Y = 1
+
+while(Y<=X){
+if(Y%2==0){
+console.log(Y+"^"+"2"+" = "+Y*Y)
+Y=Y+2
+}
+else{
+Y=Y+1
+}}
