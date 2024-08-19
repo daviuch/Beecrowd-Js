@@ -1,0 +1,21 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var entrada = prompt("XXXXX");
+
+var [A,B,C,D] = entrada.split(" ");
+
+A = parseInt(A);
+
+B = parseInt(B);
+
+var maior= Math.max(A,B)
+var menor = Math.min(A,B)
+var rest=maior%menor
+if(rest===0){
+    console.log("Sao Multiplos")
+}
+else{
+    console.log("Nao sao Multiplos")
+}
