@@ -1,0 +1,58 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+    var numero = parseFloat(prompt(""))
+	var percent;
+   
+    if(numero>=0 && 400>=numero){
+		percent=0.15
+		var reajuste = numero*percent
+		var novo= reajuste+numero
+		console.log("Novo salario: " + novo.toFixed(2))
+		console.log("Reajuste ganho: "+ reajuste.toFixed(2))
+		console.log("Em percentual: 15 %")
+	}
+    
+    if(numero>400 && 800>=numero){
+		percent=0.12
+		var reajuste = numero*percent
+		var novo= reajuste+numero
+		console.log("Novo salario: " + novo.toFixed(2))
+		console.log("Reajuste ganho: "+ reajuste.toFixed(2))
+		console.log("Em percentual: 12 %")
+	}
+	
+	if(numero>=800 && 1200>=numero){
+		percent=0.1
+		var reajuste = numero*percent
+		var novo= reajuste+numero
+		console.log("Novo salario: " + novo.toFixed(2))
+		console.log("Reajuste ganho: "+ reajuste.toFixed(2))
+		console.log("Em percentual: 10 %")
+	}
+	
+	if(numero>1200 && 2000>=numero){
+		percent=0.07
+		var reajuste = numero*percent
+		var novo= reajuste+numero
+		console.log("Novo salario: " + novo.toFixed(2))
+		console.log("Reajuste ganho: "+ reajuste.toFixed(2))
+		console.log("Em percentual: 7 %")
+	}
+	
+	if(numero>2000){
+		percent=0.04
+		var reajuste = numero*percent
+		var novo= reajuste+numero
+		console.log("Novo salario: " + novo.toFixed(2))
+		console.log("Reajuste ganho: "+ reajuste.toFixed(2))
+		console.log("Em percentual: 4 %")
+	}
+    
+    
+    
+    
+    
+    
