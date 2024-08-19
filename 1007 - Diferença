@@ -1,0 +1,14 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var prompt = function(texto) { return lines.shift();};
+var A = parseInt(prompt("Variavel A"))
+var B = parseInt(prompt("Variavel B"))
+var C = parseInt(prompt("Variavel C"))
+var D = parseInt(prompt("Variavel D"))
+var DIF = ([A * B] - [C * D])
+
+console.log("DIFERENCA = "+ DIF)
+
+
+
