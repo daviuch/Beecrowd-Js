@@ -1,0 +1,13 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var p = parseInt(prompt())
+var mut=p*4
+
+	
+
+for(var i=1;i<=mut; i += 4){
+	console.log(`${i} ${i+1} ${i+2} PUM`)
+
+}
