@@ -1,0 +1,8 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var r = parseInt(prompt("Raio"))
+var VOL= 4.0/3*3.14159*(r)**3
+
+console.log("VOLUME = "+VOL.toFixed(3))
