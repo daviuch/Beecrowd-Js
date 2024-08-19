@@ -1,0 +1,22 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var X= parseInt(prompt(""))
+var c= 0
+while(c<6){
+
+	if(X%2==0){
+		X=X+1
+	}
+
+	else{
+	console.log(X)
+	X=X+2
+	c=c+1
+	
+
+
+	}
+}	
