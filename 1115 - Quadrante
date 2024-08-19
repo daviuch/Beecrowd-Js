@@ -1,0 +1,39 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var entrada = prompt("XXXXX");
+
+  var [A, B] = entrada.split(" ");
+
+  A = parseInt(A);
+
+  B = parseInt(B);
+
+  while (A !== 0 && B !== 0) {
+
+    if (A > 0 && B > 0) {
+      console.log("primeiro")
+    }
+
+    if (A > 0 && B < 0) {
+      console.log("quarto")
+    }
+
+    if (A < 0 && B > 0) {
+      console.log("segundo")
+    }
+
+    if (A < 0 && B < 0) {
+      console.log("terceiro")
+    }
+
+    var entrada = prompt("XXXXX");
+
+    var [A, B] = entrada.split(" ");
+
+    A = parseInt(A);
+
+    B = parseInt(B);
+  }
