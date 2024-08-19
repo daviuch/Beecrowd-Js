@@ -1,0 +1,28 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+	var N = parseInt(prompt(""))
+	
+for(var cont = 1; cont<=N ; cont++){
+
+var entrada = prompt("XXXXX");
+
+var [A,B] = entrada.split(" ");
+
+A = parseInt(A);
+
+B = parseInt(B);
+
+var result= A/B
+
+if(B!==0){
+    console.log(result.toFixed(1))
+}
+
+else{
+    console.log("divisao impossivel")
+}
+
+}
