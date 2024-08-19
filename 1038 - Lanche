@@ -1,0 +1,38 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+var entrada = prompt("XXXXX");
+
+var [A,B] = entrada.split(" ");
+
+A = parseInt(A);
+
+B = parseInt(B);
+
+var cod;
+
+
+
+if(A==1){
+    cod=4
+}
+
+if(A==2){
+    cod=9/2
+}
+
+if(A==3){
+    cod=5
+}
+
+if(A==4){
+    cod=2
+}
+
+if(A==5){
+    cod= 3/2
+}
+var result = cod*B
+
+console.log("Total: R$ "+ result.toFixed(2))
+
