@@ -1,0 +1,19 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+  var N = parseInt(prompt(""))
+  var T = 0
+
+  while (T < 10000) {
+
+    if (T % N == 2) {
+      console.log(T)
+      T = T + 1
+    }
+
+
+    else {
+      T = T + 1
+    }
+  }
