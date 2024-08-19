@@ -1,0 +1,43 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+var a = 100;
+var b = 50;
+var c = 20;
+var d = 10;
+var e = 5;
+var f = 2;
+
+
+var num = parseFloat(prompt("Número"));
+var x= num/a;
+var ru= num%a;
+
+var y= ru/b;
+var rd= ru%b;
+
+var z=rd/c;
+var rt=rd%c;
+
+var k=rt/d;
+var rq=rt%d;
+
+var l=rq/e;
+var rc= rq%e
+;
+var p=rc/f;
+
+var o= rc%f;
+
+
+
+console.log(num);
+console.log(Math.trunc(x)+" nota(s) de R$ 100,00");
+console.log(Math.trunc(y)+" nota(s) de R$ 50,00");
+console.log(Math.trunc(z)+" nota(s) de R$ 20,00");
+console.log(Math.trunc(k)+" nota(s) de R$ 10,00");
+console.log(Math.trunc(l)+" nota(s) de R$ 5,00");
+console.log(Math.trunc(p)+" nota(s) de R$ 2,00");
+console.log(Math.trunc(o)+" nota(s) de R$ 1,00")
+;
