@@ -1,0 +1,62 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+    var prompt = function(texto) { return lines.shift();};
+
+
+var p = 1
+
+var inter = 0
+var gremio = 0
+var empate = 0
+
+for(var cont = 1;p==1; cont= cont+1){
+   
+    var entrada = prompt("XXXXX");
+
+var [A,B] = entrada.split(" ");
+
+A = parseInt(A);
+
+B = parseInt(B);
+
+if(A>B){
+    inter = inter+1
+}
+
+if(A<B){
+    gremio = gremio+1
+}
+
+if(A==B){
+    empate = empate+1
+}
+
+
+console.log(`Novo grenal (1-sim 2-nao)`)
+
+var p = parseInt(prompt())
+
+
+ 
+}
+
+console.log(`${cont-1} grenais`)
+console.log(`Inter:${inter}`)
+console.log(`Gremio:${gremio}`)
+console.log(`Empates:${empate}` )
+
+if(inter>gremio){
+    console.log(`Inter venceu mais`)
+    
+}
+
+else if(inter<gremio){
+    console.log(`Gremio venceu mais`)
+    
+}
+
+else if(inter==gremio){
+    console.log(`Nao houve vencedor`)
+    
+}
+
