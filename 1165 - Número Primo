@@ -1,0 +1,30 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+  var teste = 0
+  var p = parseInt(prompt())
+
+  for (var i = 1; i <= p; i++) {
+
+    var n = parseInt(prompt())
+
+    for (var x = 1; x <= n; x++) {
+
+      if (n % x == 0) {
+        teste = teste + 1
+      }
+    }
+
+
+    
+    if (teste == 2) {
+      console.log(`${n} eh primo`)
+    }
+
+    else {
+      console.log(`${n} nao eh primo`)
+    }
+
+    teste = 0
+  }
