@@ -1,0 +1,22 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+  var num = 1
+  var den = 0
+  var cont = 0
+
+  for (var x = 1; x <= 20; x++) {
+
+
+    den = 2 ** x
+    num = num + 2
+
+    var div = (num / den)
+    cont = cont + div
+
+
+
+  }
+  var soma = cont + 1
+  console.log(soma.toFixed(2))
