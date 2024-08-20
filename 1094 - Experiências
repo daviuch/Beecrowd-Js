@@ -1,0 +1,40 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+  var n = parseInt(prompt())
+  var total = 0
+  var tc = 0
+  var tr = 0
+  var ts = 0
+
+  for (var x = 1; x <= n; x++) {
+    var entrada = prompt("XXXXX");
+
+    var [A, B] = entrada.split(" ");
+
+    A = parseInt(A);
+
+    var total = total + A
+    if (B == "C") {
+      tc = tc + A
+    }
+
+    if (B == "R") {
+      tr = tr + A
+    }
+
+    if (B == "S") {
+      ts = ts + A
+    }
+  }
+
+  console.log(`Total: ${total} cobaias`)
+  console.log(`Total de coelhos: ${tc}`)
+  console.log(`Total de ratos: ${tr}`)
+  console.log(`Total de sapos: ${ts}`)
+
+  console.log(`Percentual de coelhos: ${((tc / total) * 100).toFixed(2)} %`)
+  console.log(`Percentual de ratos: ${((tr / total) * 100).toFixed(2)} %`)
+  console.log(`Percentual de sapos: ${((ts / total) * 100).toFixed(2)} %`)
