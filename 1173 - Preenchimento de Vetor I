@@ -1,0 +1,16 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var p = parseInt(prompt())
+
+var mut = 0
+
+for(var n=0;n<10;n++){
+
+    mut = p* (Math.pow(2, n))
+
+    
+    console.log("N["+n+"] = "+mut)
+}
