@@ -1,0 +1,25 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto){return lines.shift();}
+
+var v = [0,1]
+var p = parseInt(prompt())
+
+
+
+
+for(var y = 2;y<=60;y++){
+v[y]= v[y-1]+v[y-2]
+
+}
+
+
+
+ for(var x = 0;x<p;x++){
+    
+var h =parseInt(prompt())
+console.log("Fib("+h+") = "+ v[h])
+}   
+
+
+
