@@ -1,0 +1,22 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+
+var cont= 0
+var med= 0
+for(var i = 1;i<=6;i++ ){
+    
+    var x=parseFloat(prompt())
+    if(x>0){
+        cont=cont+1
+        med= med+x
+    }
+
+    
+    
+    
+}
+
+console.log(`${cont} valores positivos`)
+console.log(`${(med.toFixed(1)/cont).toFixed(1)}`)
