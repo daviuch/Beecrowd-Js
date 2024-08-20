@@ -1,0 +1,16 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto){return lines.shift();};
+var v = []
+
+for(var x = 19;x>-1;x=x-1){
+     v[x]= parseFloat(prompt())
+     
+   }  
+    for(var cont=0;cont<20;cont++){
+   
+    
+    console.log(`N[${cont}] = ${v[cont]}`)
+
+
+}
