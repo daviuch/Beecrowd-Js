@@ -1,0 +1,19 @@
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+  var maior = 0
+  var ord = 0
+  for (var x = 1; x <= 100; x++) {
+    var n = parseInt(prompt())
+    if (n > maior) {
+      maior = n
+      ord = x
+    }
+
+  }
+  
+  console.log(maior)
+  console.log(ord)
+
