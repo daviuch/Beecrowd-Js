@@ -1,0 +1,20 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+var prompt = function(texto) { return lines.shift();};
+
+ var x = 0
+  var p = 0
+  var soma = 0
+
+  for (var c = 0; x >= 0; c++) {
+    var x = parseFloat(prompt())
+    if (x > 0) {
+      p = x + p
+
+
+    }
+  }
+
+  var f = (c - 1)
+
+  console.log((p / f).toFixed(2))
